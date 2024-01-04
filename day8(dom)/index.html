@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo1">hello</h1>
+    <h1 class="demo2">xinchao1</h1>
+    <h1 class="demo2">xinchao2</h1>
+    <form action="" id="form1"></form>
+    <form action="" id="form2"></form>
+    <form action="" id="form3"></form>
+    <script>
+        let a=document.getElementById('demo1').innerHTML="hehhe"
+        let b=document.getElementsByClassName('demo2')
+        b[0].innerHTML="cc"
+        let c=document.getElementsByTagName('h1')
+        c[1].innerText="cc12"
+        let d=document.querySelector('#demo1')
+        let e=document.querySelectorAll('#demo1')
+        console.log(a)
+        console.log(b)
+        console.log(c)
+        console.log(d)
+        console.log(e)
+
+        console.log(document.forms)
+        
+    </script>
+</body>
+</html>

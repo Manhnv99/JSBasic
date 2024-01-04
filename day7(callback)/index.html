@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hours"></h1>
+    <script>
+        let sum =(a,b,c)=>{
+            let tong =a+b;
+            //set timeout thi se thuc hien cong viec theo do delay 1 lan
+            setTimeout(()=>{
+                //callback
+                c(tong);
+            },5000);
+            //setInterval thi se thuc hien cong viec theo do delay vo han
+            setInterval(()=>{
+                document.getElementById('hours').innerHTML=new Date().toLocaleTimeString()
+            },1000);
+            console.log(tong+'a')
+        }
+        let printSum=(message)=>{
+            console.log(message)
+        }
+        sum(2,3,printSum)
+    </script>
+</body>
+</html>

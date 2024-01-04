@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        disPlayNum=(num)=>{
+            console.log(num)
+        }
+        
+        myCalculator=(num1,num2,myCallback)=>{
+            let sum=num1+num2;
+            myCallback(sum);
+            console.log('c')
+        }
+        myCalculator(4,5,disPlayNum)
+    </script>
+</body>
+</html>

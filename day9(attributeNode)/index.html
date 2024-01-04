@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .active{
+        background-color: aqua;
+    }
+</style>
+<body>
+    <h1 class="active">Hello
+        <span>ádsa</span>
+    </h1>
+    <div class="box"></div>
+    <button></button>
+    <script>
+        //thêm các attributes vào các element
+
+        //add title
+            // let a=document.querySelector('h1')
+            // a.title='123'
+            // a.id='hello'
+            // a.className='active'
+            // a.href='facebook.com'
+            // a.setAttribute('href','facebook.com')
+        
+        // console.log(a)
+
+        //remove an attribute
+            // let element=document.getElementsByClassName('active')[0]
+            // element.removeAttribute('class')
+            // console.log(element);
+
+        //add a element into a element
+            //innerHTML,outerHTML,innerText
+                // let a=document.getElementsByClassName('box')[0]
+                // a.innerHTML="<span>123</span>";
+                
+                // console.log(a.innerText);
+                // console.log(a);
+
+                // let a=document.getElementsByClassName('box')[0]
+                // a.setAttribute('data-1','manhdz')
+                // console.log(a);
+                // console.log(a.getAttribute('data-1'));
+            //outerHTML
+            let a=document.getElementsByClassName('active')[0]
+            a.innerHTML='<h1>123</h1>'
+    </script>
+</body>
+</html>

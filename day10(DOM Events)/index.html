@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .active{
+        background-color: aqua;
+    }
+    ul {
+        display: none;
+    }
+
+    input:focus~ul {
+        display: block;
+    }
+</style>
+
+<body>
+    <!-- <h1 id="cc1">clickvaoday1</h1>
+    <h1 id="cc2">clickvaoday2</h1>
+    <h1 id="cc3">clickvaoday3</h1> -->
+
+    <!-- <input type="text">
+    <input type="checkbox" name="" id="">
+    <select name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <a href="https://facebook.com">facebook</a>
+    <ul>
+        <li>Javascript</li>
+        <li>PHP</li>
+        <li>Java</li>
+    </ul> -->
+    <div class="active">hi</div>
+    <button>click me</button>
+    <script>
+        
+        let a=document.querySelector('button')
+        let b=document.getElementsByClassName('active')[0]
+        a.onclick=function(e){
+            b.classList.toggle('active')
+        }
+        setInterval(()=>{
+            b.classList.toggle('active')
+        },1000)
+        console.log(a)
+
+
+        //onclick
+            // let a = document.querySelectorAll('h1')
+            // for (let i = 0; i < a.length; i++) {
+            //     a[i].onclick = function (e) {
+            //         console.log(e.target)
+            //     }
+            // }
+
+        //1.input,select  2.key up/down
+            //input
+                // let input1 = document.querySelector('input[type="text"]')
+                // input1.onchange=function(e){
+                //     console.log(e.target.value)
+                // }
+                // input1.oninput = function (e) {
+                //     console.log(e.target.value)
+                // }
+            //check box
+                // let input1 = document.querySelector('input[type="checkbox"]')
+                // input1.onchange=function(e){
+                //     console.log(e.target.checked)
+                // }
+            //select
+                // let select=document.querySelector('select')
+                // select.onchange=function(e){
+                //     console.log(e.target.value)
+                // }
+            //key up
+            //preventDefault
+                // let a=document.getElementsByTagName('a')[0]
+                // a.onclick=function(e){
+                //     if(!a.href.startsWith('https://facebook.com')){
+                //         e.preventDefault()
+                //     }
+                // }
+                // let a = document.querySelector('ul');
+                //     a.onmousedown = function (e) {
+                //         e.preventDefault()
+                //     }
+                //     a.onclick = function (e) {
+                //         console.log(e.target.innerHTML)
+                //     }
+            
+
+    </script>
+</body>
+
+</html>

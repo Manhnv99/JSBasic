@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" accept="image/*" onclick="showImg()"/>
+    <script>
+        let img=document.querySelector(`input`)
+        console.log(img.files);
+        const showImg=()=>{
+            console.log(img.files);
+        }
+    </script>
+    <!-- @RestController
+    @RequestMapping("/api/users")
+    public class UserController {
+    
+        private static final String UPLOAD_DIR = "/path/to/upload/directory";
+    
+        @PostMapping("/upload-avatar")
+        public ResponseEntity<String> uploadAvatar(@RequestParam("file") MultipartFile file) {
+            try {
+                // Lưu tệp vào thư mục đã cấu hình
+                byte[] bytes = file.getBytes();
+                Path path = Paths.get(UPLOAD_DIR + "/" + file.getOriginalFilename());
+                Files.write(path, bytes);
+    
+                // Ở đây, bạn có thể lưu đường dẫn của ảnh vào cơ sở dữ liệu cho người dùng cụ thể
+    
+                return new ResponseEntity<>("File uploaded successfully", HttpStatus.OK);
+            } catch (IOException e) {
+                e.printStackTrace();
+                return new ResponseEntity<>("File upload failed", HttpStatus.INTERNAL_SERVER_ERROR);
+            }
+        }
+    } -->
+</body>
+</html>

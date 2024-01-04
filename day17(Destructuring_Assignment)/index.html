@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let arr1=[1,2,3,4,5]
+        // //...arr1 là thực hiện copy hết mảng arr1 và chuyền lại vào arr2 và ngoài ra có thể thêm được bất kì vào vị trí nào của arr2
+        // let arr2=['a',...arr1,6]
+        // console.log(arr1);
+        // console.log(arr2);
+
+        let person={
+            name:'mạnh',
+            age:21,
+            major:'CNTT'
+        }
+        let copyPerson={...person,major:'CNTT'}
+        console.log(copyPerson)
+        //lưu ý:nếu cái ta copy nó là 1 mảng thì ta phải bọc nó bằng [],nếu nó là 1 object thì bọc nó bằng {}
+
+        //đây là cách select nhanh các thuộc tính trong 1 object mà không cần phải select trực tiếp từng thuộc tính một và những key được khai báo
+        //đại diện cho từng thuộc tính trong person phải trùng với key của thằng person , sai key thì sẽ không select được.
+        let {name,age,major}=person
+        console.log(name,age,major)
+    </script>
+</body>
+</html>
